@@ -3,22 +3,35 @@
 <html>
 <head>
 	<title>home</title>
+	<style type="text/css">
+		body {
+			background-color: black;
+			background-size: 100%;
+			align-items: center;
+			text-align: center;
+			z-index: 0;
+			color: white;
+			padding-top: 20px;
+			font-family: sans-serif;
+			padding-right: 100px;
+			padding-left: 100px;
+		}
+	</style>
 </head>
 <body>
 	<h1>There are {{ count }} words in your text</h1>
 	<br>
-	<a href="{% url 'home' %}">Start Again</a>
+	<a href="{% url 'home' %}" style="color: white;">Start Again</a>
 	<br>
 	<h1>Your Text</h1>
 	<br>		
 	{{ fulltext }}
-	<br>
+	<br><br>
 	<h1>Word Count</h1>
 	{% for word, countTotal in sortedWords %}
 	<br>
 	{{ word }}  -  {{ countTotal }} 
-	<br>
-	
+	<br>	
 	<br>
 	{% endfor %}
 </body>
