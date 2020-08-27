@@ -3,10 +3,25 @@
 <html>
 <head>
 	<title>about</title>
+	<style type="text/css">
+		body {
+			background-color: black;
+			background-size: 100%;
+			align-items: center;
+			text-align: center;
+			z-index: 0;
+			color: white;
+			padding-top: 20px;
+			font-family: sans-serif;
+			padding-right: 100px;
+			padding-left: 100px;
+			padding-top: 50px;
+		}
+	</style>
 </head>
 <body>
 	<h1>THIS IS THE SITE I MADE USING DJANGO</h1>
 	<br>
-	<a href="{% url 'home' %}">Return Home</a>
+	<a href="{% url 'home' %}" style="color: pink;">Return Home</a>
 </body>
 </html>
