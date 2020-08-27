@@ -4,5 +4,5 @@ from django.shortcuts import render
 def home(request):
 	return render(request, 'home.html')
 
-def eggs(request):
-	return HttpResponse("<h1>Eggs are amazing!!</h1>")
+def count(request):
+	return render(request, 'count.html')
